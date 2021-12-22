@@ -6,7 +6,7 @@
 /*   By: kahirose <kahirose@studnt.42tokyo.jp>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 18:34:23 by kahirose          #+#    #+#             */
-/*   Updated: 2021/11/07 11:54:34 by kahirose         ###   ########.fr       */
+/*   Updated: 2021/11/12 15:21:51 by kahirose         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 // {
 // 	//free(content);
 // 	// ft_bzero ();
+// 	free(content);
+// 	return ;
 // }
 // #include <stdio.h>
 // void	ft_printlst(t_list *lst)
@@ -66,7 +68,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 // 	ft_lstadd_back (&lst, nd3);
 // 	ft_printlst (lst);
 // 	printf("%p\n", lst);
-// 	ft_lstclear(NULL, f);
-// 	// ft_printlst (lst);
+// 	ft_lstclear(&lst, f);
+// 	ft_printlst (lst);
 // 	return (0);
 // }

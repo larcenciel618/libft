@@ -6,7 +6,7 @@
 /*   By: kahirose <kahirose@studnt.42tokyo.jp>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 20:45:38 by kahirose          #+#    #+#             */
-/*   Updated: 2021/11/07 03:43:19 by kahirose         ###   ########.fr       */
+/*   Updated: 2021/11/07 17:07:22 by kahirose         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,7 @@ int	ft_atoi(const char *str)
 }
 
 // #include <stdio.h>
+// #include <stdlib.h>
 // int main(void)
 // {
 // 	// long longmax = -9223372036854775808;

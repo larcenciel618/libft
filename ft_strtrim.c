@@ -6,7 +6,7 @@
 /*   By: kahirose <kahirose@studnt.42tokyo.jp>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 13:18:15 by kahirose          #+#    #+#             */
-/*   Updated: 2021/11/06 02:19:59 by kahirose         ###   ########.fr       */
+/*   Updated: 2021/11/08 11:01:33 by kahirose         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	first;
 	size_t	i;
 
-	if (s1 == NULL)
+	if (s1 == NULL || set == NULL)
 		return (NULL);
 	len = ft_strlen(s1);
 	first = headtrim(s1, set);
@@ -58,6 +58,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (ft_substr(s1, first, len - (size_t)first));
 }
 
+// #include <stdio.h>
 // int	main(void)
 // {
 // 	char	*s;

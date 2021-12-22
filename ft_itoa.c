@@ -6,7 +6,7 @@
 /*   By: kahirose <kahirose@studnt.42tokyo.jp>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/23 08:06:17 by kahirose          #+#    #+#             */
-/*   Updated: 2021/11/05 01:31:43 by kahirose         ###   ########.fr       */
+/*   Updated: 2021/11/26 02:54:14 by kahirose         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,5 +90,38 @@ char	*ft_itoa(int n)
 // 	str = ft_itoa(zero);
 // 	printf("%s\n", str);
 // 	printf("%d\n", zero);
+// }
+// 	min = -2147483648;
+// 	printf("%d\n", -min);
+// 	return (0);
+// }
+// int main(int argc, char const *argv[])
+// {
+// 	int min = -2147483648;
+// 	char *str;
+
+// 	str = ft_itoa(min);
+// 	printf("%s\n", str);
+
+// 	return 0;
+// }
+
+// #include <stdio.h>
+// #include <limits.h>
+// int main(void)
+// {
+// 	int i = INT_MIN;
+// 	char *s;
+
+// 	while (i < INT_MAX)
+// 	{
+// 		s = ft_itoa(i);
+// 		// if (atoi(s) != i)
+// 		printf("[%d:%s]\n", i, s);
+// 		i++;
+// 		if (i % 500000000 == 0)
+// 			printf("5億経過\n");
+// 		free(s);
+// 	}
 // 	return (0);
 // }

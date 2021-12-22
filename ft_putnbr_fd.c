@@ -6,7 +6,7 @@
 /*   By: kahirose <kahirose@studnt.42tokyo.jp>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 11:51:20 by kahirose          #+#    #+#             */
-/*   Updated: 2021/10/25 13:14:11 by kahirose         ###   ########.fr       */
+/*   Updated: 2021/11/30 11:55:26 by kahirose         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,15 +32,28 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	if (n >= 10)
 		ft_putnbr_fd(n / 10, fd);
-	if (n < 0)
-		n *= -1;
 	nbr = (n % 10) + '0';
 	write (fd, &nbr, 1);
 }
 
+// int main()
+// {
+//     ft_putnbr_fd(-2147483648, 1);
+//     return (0);
+// }
+
 // int main(void)
 // {
-// 	int i = 859724;
+// 	int i = -859724;
 // 	ft_putnbr_fd(i, 1);
 // 	return (0);
 // }
+
+//#include <stdio.h>
+//int main(void)
+//{
+//	int i = -4;
+//
+//	printf("%d\n", i % 10);
+//	return (0);
+//}

@@ -6,7 +6,7 @@
 /*   By: kahirose <kahirose@studnt.42tokyo.jp>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 09:05:14 by kahirose          #+#    #+#             */
-/*   Updated: 2021/10/15 14:55:30 by kahirose         ###   ########.fr       */
+/*   Updated: 2021/11/08 05:56:18 by kahirose         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,12 @@ size_t	ft_strlen(const char *str)
 	return (i);
 }
 
+// #include <stdio.h>
 // int	main(void)
 // {
-// 	char str[256] = "kisyaotorihikikouzanisoukinnitasimasita";
+// 	char str[256] = "hello, world.";
+
+// 	printf("%p", str);
 // 	printf("%zu", ft_strlen(str));
 // 	return (0);
 // }
